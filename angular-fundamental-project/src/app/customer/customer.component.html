@@ -1,0 +1,89 @@
+<!-- <h2>Data Binding Examples</h2> -->
+
+<!-- <h3>Interpolation Binding</h3> -->
+<!-- <p>{{message}}</p>  -->
+<!-- <p>Customer Code: {{custObj.CustomerCode}}</p>
+<p>Customer Name: {{custObj.CustomerName}}</p>
+<p>Customer Amount: {{custObj.CustomerAmount}}</p> -->
+
+<!-- <h3>One-Way Data Binding (Model/Component to View)</h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [value]="custObj.CustomerCode" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [value]="custObj.CustomerName" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [value]="custObj.CustomerAmount" /></p> -->
+
+<!-- <h3>One-Way Data Binding (View to Model/Component)</h3>
+<p>Customer Code: <input type="text" name="CustomerCode" (input)="custObj.CustomerCode=$event.target.value" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" (input)="custObj.CustomerName=$event.target.value" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" (input)="custObj.CustomerAmount=$event.target.value" /></p> -->
+
+<!-- <h3>Two-Way Data Binding (Component to View to Component)</h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [value]="custObj.CustomerCode"
+        (input)="custObj.CustomerCode=$event.target.value" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [value]="custObj.CustomerName"
+        (input)="custObj.CustomerName=$event.target.value" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [value]="custObj.CustomerAmount"
+        (input)="custObj.CustomerAmount=$event.target.value" /></p> -->
+
+<!-- <h3>Two-Way Data Binding (Component to View to Component)</h3>
+<p>Customer Code: <input type="text" name="CustomerCode" [(ngModel)]="custObj.CustomerCode" /></p>
+<p>Customer Name: <input type="text" name="CustomerName" [(ngModel)]="custObj.CustomerName" /></p>
+<p>Customer Amount: <input type="text" name="CustomerAmount" [(ngModel)]="custObj.CustomerAmount" /></p> -->
+
+<!-- <h3>Login Form</h3>
+<p><input type="text" name="username" [(ngModel)]="userObj.username" placeholder="Enter Username" /></p>
+<p><input type="password" name="password" [(ngModel)]="userObj.password" placeholder="Enter Password" /></p>
+<button (click)="doLogin()">Login</button> -->
+
+<h2>{{message}}</h2>
+
+<!-- <h3>List of Projects</h3>
+<ul *ngFor="let project of projects">
+        <li>{{project}}</li>
+</ul> -->
+<!-- 
+<table>
+        <thead>
+                <tr>
+                        <th>S.No.</th>
+                        <th>Customer Code</th>
+                        <th>Customer Name</th>
+                        <th>Customer Age</th>
+                        <th>Customer Amount</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let cust of customerList; let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{cust.custCode}}</td>
+                        <td>{{cust.custName}}</td>
+                        <td>{{cust.custAge}}</td>
+                        <td>{{cust.custAmount}}</td>
+                </tr>
+        </tbody>
+</table> -->
+
+<!-- <h3>Using ngIf</h3>
+<p *ngIf="loggedIn">
+        You are successfully Logged In.
+</p>
+<p *ngIf="!loggedIn">
+        Login Failed..
+</p> -->
+
+
+<!-- <p *ngIf="loggedIn; else elseBlock">
+        You are successfully Logged In.
+</p>
+<ng-template #elseBlock>
+        Logged-In Failed..
+</ng-template> -->
+<!-- 
+<p *ngIf="loggedIn; then blockOne else blockTwo">
+        Logged In
+</p>
+<ng-template #blockOne>
+        Something from Block One
+</ng-template>
+<ng-template #blockTwo>
+        Something from Block Two
+</ng-template> -->
