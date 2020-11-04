@@ -1,0 +1,11 @@
+
+<div>
+    <h2><p>Login Form using Model Driven Form</p></h2>
+    <form [formGroup]="userRef" (ngSubmit)="checkUser()">
+    <lable>Username</lable>
+    <input type="text" formControlName="uname"/><br/>
+    <lable>Password</lable>
+    <input type="password" formControlName="pname"/><br/>
+    <input type="submit"  value="Submit"/>
+    </form>
+</div>
