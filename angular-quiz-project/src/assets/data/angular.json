@@ -1,0 +1,167 @@
+{  
+    "questions": [
+        {
+            "id": 101,
+            "name": " Which of the following is correct about Services?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,                    
+                    "name": "Angular 2 Services are a set of code that can be shared by different components of an application.",
+                    "isSelected": true
+                },
+                {
+                    "id": 3,                  
+                    "name": "Angular 2 Services cannot be used across multiple applications.",
+                    "isSelected": false
+                },
+                {
+                    "id": 4,                  
+                    "name": "Angular 2 Services help to build the applications into many modules.",
+                    "isSelected": false
+                },
+                {
+                    "id": 5,                   
+                    "name": "None of the above",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": " Which of the following is correct about Export Array in Angular 2 Modules?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,                  
+                    "name": "This is used to export services which can then be used in other services.",
+                    "isSelected": false
+                },
+                {
+                    "id": 3,                   
+                    "name": " This is used to export components, directives, and pipes which can then be used in other modules.",
+                    "isSelected": true
+                },
+                {
+                    "id": 4,                   
+                    "name": "Both of the above.",
+                    "isSelected": false
+                },
+                {
+                    "id": 5,                  
+                    "name": "None of the above",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "Which of the following is correct about tsconfig.json?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,                   
+                    "name": "This file is used to give the options about TypeScript used for the Angular JS project.",
+                    "isSelected": true
+                },
+                {
+                    "id": 3,                  
+                    "name": "This file contains information about Angular 2 project.",
+                    "isSelected": false
+                },
+                {
+                    "id": 4,              
+                    "name": "This file contains the system files required for Angular JS application.",
+                    "isSelected": false
+                },
+                {
+                    "id": 5,                 
+                    "name": "All of the above.",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "name": "Which of the following is correct about package.json?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,             
+                    "name": "There are two types of dependencies, first is the dependencies and then there are dev dependencies.",
+                    "isSelected": false
+                },
+                {
+                    "id": 3,                   
+                    "name": "The dev ones are required during the development process and the others are needed to run the application.",
+                    "isSelected": false
+                },
+                {
+                    "id": 4,                  
+                    "name": "Both of the above.",
+                    "isSelected": true
+                },
+                {
+                    "id": 5,                 
+                    "name": "None of the above.",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "name": "Which of the following filter is used to slice a piece of data from the input string.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,                   
+                    "name": "slice",
+                    "isSelected": false
+                },
+                {
+                    "id": 3,               
+                    "name": "substring",
+                    "isSelected": false
+                },
+                {
+                    "id": 4,     
+                    "name": "Both of the above.",
+                    "isSelected": false
+                },
+                {
+                    "id": 5,           
+                    "name": "None of the above.",
+                    "isSelected": true
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "name": "Which of the following is correct about systemjs.config.json?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 2,                  
+                    "name": "'npm:': 'node_modules/' tells the location in our project where all the npm modules are located.",
+                    "isSelected": false
+                },
+                {
+                    "id": 3,               
+                    "name": "The mapping of app: 'app' tells the folder where all our applications files are loaded.",
+                    "isSelected": false
+                },
+                {
+                    "id": 4,                  
+                    "name": "Both of the above.",
+                    "isSelected": true
+                },
+                {
+                    "id": 5,                 
+                    "name": "None of the above.",
+                    "isSelected": false
+                }
+            ]
+        }
+     
+    ]
+}

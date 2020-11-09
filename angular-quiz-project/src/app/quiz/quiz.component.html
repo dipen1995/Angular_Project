@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            
+    <link href="home.component.css" rel="stytlesheet">
+</head>
+<body class="text-left">
+  
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  
+  <div id="quiz">
+    <h1 class="text-sm-center">Pre-hiring test</h1>
+    <hr /> 
+
+    <div *ngIf="mode=='quiz' && quiz">
+      <div *ngFor="let question of Questions;">
+        <h5>Question {{Qus.index + 1}}.<br/> </h5>
+        <p><b>{{question.name}}</b></p>
+
+        <div>
+          <div class="col-md-6" *ngFor="let option of question.options">
+            <div>
+              <label class="option.id">
+                  <input id="{{option.id}}" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" />
+                  {{option.name}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="text-sm-center" *ngIf="mode!='result'">
+        <svg width="2em" height="2em"   (click)="goTo(Qus.index - 1);" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+        </svg> &nbsp; &nbsp;
+        <svg width="2em" height="2em" (click)="goTo(Qus.index + 1);" viewBox="0 0 16 16" class="bi bi-arrow-right-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 8.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+        </svg> &nbsp; &nbsp;
+        <button class="btn btn-success" (click)="onSubmit();">Submit Quiz</button>
+      </div>
+     
+    </div>
+    
+    <div class="result" *ngIf="mode=='result'">
+      <h2>Result</h2>
+      <div *ngFor="let question of quiz.questions; let index = index">
+        <div class="result-question">
+          <p class="alert {{ isCorrect(question) == 'correct'}}"> <b>Question {{index + 1}}</b>. Answer is <b>{{isCorrect(question)}}</b>.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />    
+  </div>
+
+  <hr/>
+  <footer class="mastfoot mt-auto">
+    <div class="inner text-sm-center">
+        <p>&copy; 2020 Codper. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
